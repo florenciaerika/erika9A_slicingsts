@@ -1,0 +1,123 @@
+.desktop {
+  background-color: #ffc2c2;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1024px;
+  position: relative;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 88px;
+  left: 233px;
+  width: 1414px;
+  font-family: "Irish Grover-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 128px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .ellipse {
+  position: absolute;
+  top: 344px;
+  left: 831px;
+  width: 507px;
+  height: 469px;
+  object-fit: cover;
+}
+
+.desktop .resep-ini-bukan {
+  position: absolute;
+  top: 421px;
+  left: 176px;
+  width: 685px;
+  font-family: "Italianno-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .the-best-chocolate {
+  position: absolute;
+  top: 904px;
+  left: 490px;
+  width: 1px;
+  height: 1px;
+  object-fit: cover;
+}
+/* Original CSS code should be injected here */
+
+.bakeshop-header {
+  position: relative;
+  z-index: 1;
+}
+
+.content-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 176px;
+  margin-top: 256px;
+}
+
+.cookie-image-container {
+  position: relative;
+  margin: 0;
+}
+
+.story-content {
+  flex: 1;
+  max-width: 685px;
+}
+
+@media (max-width: 1440px) {
+  .content-section {
+    padding: 0 5%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .desktop .text-wrapper {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+  }
+
+  .desktop .ellipse {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 2rem 0;
+  }
+
+  .desktop .resep-ini-bukan {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop .text-wrapper {
+    font-size: 64px;
+    top: 40px;
+  }
+
+  .desktop .resep-ini-bukan {
+    font-size: 32px;
+  }
+
+  .desktop .ellipse {
+    width: 80%;
+    height: auto;
+  }
+}
