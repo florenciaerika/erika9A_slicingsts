@@ -1,35 +1,250 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <meta name="description" content="Berry Bakeshop - Cookies terbaik dengan resep yang telah teruji berkali-kali" />
-    <title>Berry Bakeshop - The Best Chocolate Chip Cookies</title>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="desktop" role="main">
-      <header class="bakeshop-header">
-        <h1 class="text-wrapper">Berry Bakeshop</h1>
-      </header>
-      <section class="content-section" aria-labelledby="bakeshop-story">
-        <figure class="cookie-image-container">
-          <img
-            class="ellipse"
-            src="Ellipse 1.png"
-            alt="Delicious chocolate chip cookies arranged in a circular pattern"
-          />
-        </figure>
-        <article class="story-content">
-          <p class="resep-ini-bukan" id="bakeshop-story">
-            Resep ini bukan diciptakan sekali jadi.<br />
-            Butuh banyak percobaan, gagal berkali-kali, <br />sampai akhirnya lahir cookies yang <br />bikin teman-teman
-            kami bilang: <br />'ini nggak boleh berhenti dijual
-          </p>
-        </article>
-        <img class="the-best-chocolate" src="img/the-best-chocolate-chip-cookies-1.png" alt="" role="presentation" />
-      </section>
-    </main>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pink Beauty - Temukan makeup impianmu dengan sentuhan pink. Koleksi makeup berkualitas tinggi untuk perempuan Indonesia.">
+    <title>Pink Beauty - Makeup Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">💄</span>
+                    <span class="logo-text">Pink Beauty</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="contact.html" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+                        <span class="icon">♡</span>
+                        <span class="badge" id="wishlistCount">0</span>
+                    </button>
+                    <button class="icon-btn" id="cartBtn" aria-label="Keranjang">
+                        <span class="icon">🛍️</span>
+                        <span class="badge" id="cartCount">0</span>
+                    </button>
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Temukan Makeup Impianmu dengan Sentuhan Pink 💄✨</h1>
+                <p class="hero-subtitle">Koleksi makeup berkualitas tinggi yang aman, terjangkau, dan bikin kamu tampil percaya diri setiap hari</p>
+                <div class="hero-buttons">
+                    <a href="shop.html" class="btn btn-primary">Belanja Sekarang</a>
+                    <a href="#categories" class="btn btn-secondary">Lihat Koleksi</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <div class="makeup-illustration">
+                        <span class="makeup-emoji">💋</span>
+                        <span class="makeup-emoji">✨</span>
+                        <span class="makeup-emoji">💄</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <span class="promo-icon">🎉</span>
+                <p class="promo-text">Diskon hingga <strong>50%</strong> untuk produk pilihan! Buruan belanja sekarang!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kategori Produk</h2>
+                <p class="section-subtitle">Temukan produk makeup favoritmu</p>
+            </div>
+            <div class="categories-grid">
+                <a href="shop.html?category=lipstick" class="category-card">
+                    <div class="category-icon">💄</div>
+                    <h3 class="category-name">Lipstick</h3>
+                    <p class="category-desc">Warna-warna cantik untuk bibirmu</p>
+                </a>
+                <a href="shop.html?category=foundation" class="category-card">
+                    <div class="category-icon">🧴</div>
+                    <h3 class="category-name">Foundation</h3>
+                    <p class="category-desc">Base makeup yang flawless</p>
+                </a>
+                <a href="shop.html?category=eyeshadow" class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3 class="category-name">Eyeshadow</h3>
+                    <p class="category-desc">Palette warna yang stunning</p>
+                </a>
+                <a href="shop.html?category=blushon" class="category-card">
+                    <div class="category-icon">🌸</div>
+                    <h3 class="category-name">Blush On</h3>
+                    <p class="category-desc">Pipi merona natural</p>
+                </a>
+                <a href="shop.html?category=brush" class="category-card">
+                    <div class="category-icon">🖌️</div>
+                    <h3 class="category-name">Brush Set</h3>
+                    <p class="category-desc">Tools untuk aplikasi sempurna</p>
+                </a>
+                <a href="shop.html?category=bundle" class="category-card">
+                    <div class="category-icon">🎁</div>
+                    <h3 class="category-name">Bundle Set</h3>
+                    <p class="category-desc">Paket hemat dan lengkap</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Produk Terlaris</h2>
+                <p class="section-subtitle">Produk favorit yang paling banyak dibeli</p>
+            </div>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            <div class="section-footer">
+                <a href="shop.html" class="btn btn-outline">Lihat Semua Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Apa Kata Mereka?</h2>
+                <p class="section-subtitle">Testimoni dari pelanggan setia kami</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Lipsticknya tahan lama banget! Warnanya juga cantik dan cocok untuk daily makeup. Packagingnya lucu dan girly, suka banget!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Ayu Lestari</h4>
+                            <p class="author-location">Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Foundation-nya ringan di kulit dan coverage-nya bagus. Harganya juga affordable. Recommended banget untuk pemula!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Siti Nurhaliza</h4>
+                            <p class="author-location">Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Eyeshadow palette-nya pigmented dan mudah di-blend. Warna-warnanya cantik semua. Packagingnya juga aesthetic!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">D</div>
+                        <div class="author-info">
+                            <h4 class="author-name">Dinda Permata</h4>
+                            <p class="author-location">Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Dapatkan Update Terbaru! ✨</h2>
+                <p class="newsletter-text">Subscribe untuk mendapatkan info promo, produk baru, dan tips makeup</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" placeholder="Masukkan email kamu" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <span class="logo-icon">💄</span>
+                        Pink Beauty
+                    </h3>
+                    <p class="footer-text">Menemani perempuan Indonesia tampil percaya diri dengan makeup yang aman dan terjangkau.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                        <a href="#" class="social-link" aria-label="Shopee">🛒</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Navigasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Kategori</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=lipstick">Lipstick</a></li>
+                        <li><a href="shop.html?category=foundation">Foundation</a></li>
+                        <li><a href="shop.html?category=eyeshadow">Eyeshadow</a></li>
+                        <li><a href="shop.html?category=blushon">Blush On</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Bantuan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Cara Pemesanan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pink Beauty. All rights reserved. Made with 💖</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
